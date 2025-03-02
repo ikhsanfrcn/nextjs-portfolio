@@ -8,9 +8,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'fira-code': ['Fira Code', 'monospace'],
+      },
       colors: {
-        background: "var(--background)",
+        // background: "var(--background)",
         foreground: "var(--foreground)",
+        'primary': '#C778DD',
+        'gray': '#ABB2BF',
+        'background': '#282C33',
       },
     },
   },
