@@ -23,34 +23,33 @@ export const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="sticky top-0 z-50 bg-background shadow-md">
-      <div className="flex justify-between py-6 px-5 md:px-20">
-        <div className="flex items-center">
-          <AiOutlineLayout className="text-3xl" />
-          <h1 className="md:text-3xl font-bold ml-2">Portfolio</h1>
-        </div>
 
-        <DesktopMenu
+    <div className="flex justify-between py-6 px-5 md:px-20">
+      <div className="flex items-center">
+        <AiOutlineLayout className="text-3xl" />
+        <h1 className="md:text-3xl font-bold ml-2">Portfolio</h1>
+      </div>
+
+      <DesktopMenu
+        menuItems={menuItems}
+        pathname={pathname}
+        handleNavigation={handleNavigation}
+      />
+
+      <div className="md:hidden flex items-center">
+        <AiOutlineMenu
+          className="text-3xl cursor-pointer"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        />
+      </div>
+
+      {isMenuOpen && (
+        <MobileMenu
           menuItems={menuItems}
           pathname={pathname}
           handleNavigation={handleNavigation}
         />
-
-        <div className="md:hidden flex items-center">
-          <AiOutlineMenu
-            className="text-3xl cursor-pointer"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          />
-        </div>
-
-        {isMenuOpen && (
-          <MobileMenu
-            menuItems={menuItems}
-            pathname={pathname}
-            handleNavigation={handleNavigation}
-          />
-        )}
-      </div>
-     </div>
+      )}
+    </div>
   );
 };

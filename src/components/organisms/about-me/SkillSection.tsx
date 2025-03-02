@@ -2,7 +2,7 @@ import { Text } from "@/components/atoms/Text";
 
 export const SkillSection: React.FC = () => {
   return (
-    <section className="mt-16">
+    <section className="container mx-auto px-5 lg:px-10 mt-16">
       <h2 className="text-2xl text-primary">
         #<span className="text-white">skills</span>
       </h2>

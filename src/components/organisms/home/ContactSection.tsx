@@ -5,10 +5,12 @@ import { MdEmail } from "react-icons/md";
 
 export const ContactSection: React.FC = () => {
   return (
-    <section className="container mx-auto px-5 md:px-10 mt-16">
+    <section className="px-5 lg:px-10 mt-16">
       <div className="flex justify-between items-center">
         <div className="flex gap-2 md:gap-10">
-          <h2 className="text-2xl font-bold">#contact</h2>
+        <h2 className="text-2xl font-bold text-primary">
+            #<span className="text-white">contact</span>
+          </h2>
           <hr className="w-14 md:w-60 h-0.5 mx-auto my-4 bg-primary border-0 rounded-sm" />
         </div>
       </div>
@@ -21,7 +23,7 @@ export const ContactSection: React.FC = () => {
           </Text>
         </div>
 
-        <div className="flex md:w-[30%] items-center md:justify-center pt-10 md:pt-0">
+        <div className="flex md:w-[40%] items-center md:justify-center pt-10 md:pt-0">
           <div className="border border-gray-400 p-2">
             <h5 className="p-2">Message Me Here</h5>
             <div className="grid gap-2">

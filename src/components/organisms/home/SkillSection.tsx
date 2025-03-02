@@ -3,7 +3,7 @@ import { Text } from "../../atoms/Text";
 
 export const SkillSection: React.FC = () => {
   return (
-    <section className="container mx-auto px-5 md:px-10 mt-16 lg:pl-20">
+    <section className="container mx-auto px-5 lg:px-10 mt-16 lg:pl-20">
       <div className="flex justify-between items-center">
         <div className="flex gap-2 md:gap-10">
           <h2 className="text-2xl font-bold text-primary">

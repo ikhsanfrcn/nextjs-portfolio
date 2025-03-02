@@ -1,3 +1,4 @@
+'use client'
 import { Text } from "../../atoms/Text";
 import { Button } from "../../atoms/Button";
 
@@ -23,7 +24,7 @@ export const AboutContent: React.FC<AboutContentProps> = ({ showButton = true })
         newest technologies and frameworks.
       </Text>
       {showButton && (
-        <Button className="hidden border-primary md:block mt-6">
+        <Button onClick={() => window.open("/about-me", "_self")} className="hidden border-primary md:block mt-6">
           Read more
         </Button>
       )}

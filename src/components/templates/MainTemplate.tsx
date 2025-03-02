@@ -9,9 +9,9 @@ interface MainTemplateProps {
 
 export const MainTemplate = ({ children }: MainTemplateProps) => {
   return (
-    <div className="mx-auto">
+    <div>
       {/* Navbar dan bagian lain di template */}
-      <header>
+      <header className="sticky top-0 z-50 bg-background shadow-md">
         <Navbar />
       </header>
 

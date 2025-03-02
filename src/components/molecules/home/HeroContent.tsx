@@ -1,3 +1,4 @@
+'use client'
 import { Title } from '../../atoms/Title';
 import { Button } from '../../atoms/Button';
 // import Image from "next/image";
@@ -29,7 +30,7 @@ export const HeroContent: React.FC = () => {
           /> */}
         </div>
       </Motion>
-      <Button className="hidden border-primary md:block mt-12">Contact me !!</Button>
+      <Button onClick={() => window.open("/contact", "_self")} className="hidden border-primary md:block mt-12">Contact me !!</Button>
     </div>
   );
 };
