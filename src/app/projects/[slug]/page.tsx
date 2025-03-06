@@ -6,7 +6,7 @@ interface ProjectDetailProps {
   params: { slug: string };
 }
 
-export async function generateMetadata({ params }: ProjectDetailProps) {
+export async function generateMetadata({ params }: { params: { slug: string } }) {
   const project = ProjectsData.find((p) => p.slug === params.slug);
 
   if (!project) {
@@ -45,6 +45,7 @@ export async function generateMetadata({ params }: ProjectDetailProps) {
 }
 
 export default async function ProjectDetail({ params }: ProjectDetailProps) {
+  
   const project = ProjectsData.find((p) => p.slug === params.slug);
 
   if (!project) {
