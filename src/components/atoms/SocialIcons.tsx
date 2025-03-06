@@ -1,4 +1,3 @@
-// atoms/SocialIcons.tsx
 import { FaGithub, FaLinkedin, FaFigma } from 'react-icons/fa';
 import { Icon } from './Icon';
 

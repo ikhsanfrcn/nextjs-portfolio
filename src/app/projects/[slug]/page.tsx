@@ -3,8 +3,9 @@ import { ProjectsData } from "@/data/projectsData";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-const ProjectDetail = async ({ params }: { params: { slug: string } }) => {
-  const project = ProjectsData.find((p) => p.slug === params.slug);
+const ProjectDetail = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params;
+  const project = ProjectsData.find((p) => p.slug === slug);
 
   if (!project) {
     return notFound();
@@ -15,7 +16,7 @@ const ProjectDetail = async ({ params }: { params: { slug: string } }) => {
   return (
     <>
       <MetaTags
-        title= {`${project.title} | Creative Web Portfolio`}
+        title={`${project.title} | Creative Web Portfolio`}
         description={project.description.substring(0, 150)}
         image={project.visuals[0]}
         url={currentUrl}

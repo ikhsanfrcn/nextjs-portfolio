@@ -1,4 +1,3 @@
-// pages/index.tsx
 import { NextPage } from 'next';
 import QuoteBox from '../../molecules/home/QuoteBox';
 

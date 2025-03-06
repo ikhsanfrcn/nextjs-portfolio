@@ -1,4 +1,3 @@
-// components/molecules/QuoteBox.tsx
 import React from "react";
 import { Text } from "../../atoms/Text";
 
