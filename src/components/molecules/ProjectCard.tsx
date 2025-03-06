@@ -23,10 +23,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     <div className={`border border-gray ${className}`}>
       <Image
         src={visuals[0]}
-        width={500}
-        height={200}
+        width={0}
+        height={0}
+        sizes="100vw"
         alt={title}
-        className="border-b border-gray"
+        className="h-[300px] w-full object-cover border-b border-gray"
       />
       <div className="p-2 h-20 border-b border-gray">
         <Text className="line-clamp-3 hover:line-clamp-none">{caption}</Text>

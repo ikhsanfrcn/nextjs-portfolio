@@ -14,7 +14,7 @@ export const SocialMediaIcons: React.FC = () => {
       <Icon
         Component={BsInstagram}
         className="text-2xl md:text-2xl text-gray hover:text-primary"
-        link="https://www.instagram.com/ikhsanfrcn/"
+        link="https://www.instagram.com/isanfh/"
       />
       <Icon
         Component={BsLinkedin}

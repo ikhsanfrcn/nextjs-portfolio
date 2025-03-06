@@ -14,31 +14,54 @@ export type ProjectCardProps = {
 
 export const ProjectsData: ProjectCardProps[] = [
   {
-    slug: 'project-one',
-    title: 'Project One',
-    caption: 'CSS Express Node.js',
-    description: 'A brief summary of Project One.',
-    situation: 'The project aimed to improve user engagement for an e-commerce platform.',
+    slug: 'nuntium-blog-app',
+    title: 'Nuntium Blog App',
+    caption: 'HTML Tailwind CSS React Next.js TypeScript Backendless',
+    description: 'A simple blog web app use backendless API',
+    situation: 'The project aimed to improve user engagement for an blog platform.',
     task: 'My responsibility was to design a user interface that was both visually appealing and functional.',
-    action: 'I utilized React for the frontend, integrated it with the backend API, and worked closely with the UX team.',
+    action: 'I utilized Next.js for the frontend, integrated it with the backend API, and worked closely with the UX team.',
     result: 'The new design increased user retention by 20%, and the client was highly satisfied with the outcome.',
-    technologies: ['React', 'Next.js', 'Tailwind CSS', 'Node.js'],
-    visuals: ['/project1.jpg', '/project1.jpg'],
+    technologies: ['React', 'Next.js', 'Tailwind CSS', 'Backendless'],
+    visuals: ['/newsapp.png', '/newsapp2.png', '/newsapp3.png', '/newsapp4.png'],
     buttons: [
-      { title: "Live <~>", onClick: () => { window.open("https://www.google.com", "_blank"); }, className: "border-primary" },
+      { title: "Live <~>", onClick: () => { window.open("https://nuntium-phi.vercel.app", "_blank"); }, className: "border-primary" },
       { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[0].slug}`; }, className: "border-gray text-gray" }
     ],
   },
   {
-    slug: 'project-two',
-    title: 'Project Two',
-    caption: 'Python Django PostgreSQL',
-    description: 'A brief summary of Project Two.',
-    situation: 'The goal was to streamline the internal workflow for a logistics company.',
-    task: 'I was tasked with automating reporting and creating dashboards for the team.',
-    action: 'I developed the solution using Python and Django, integrated with the company’s existing systems.',
-    result: 'The automation reduced manual reporting time by 40%, and the team saw a significant increase in efficiency.',
-    technologies: ['Python', 'Django', 'PostgreSQL'],
-    visuals: ['/project1.jpg'],
-  },
+    slug: 'web-portfolio',
+    title: 'Web Portfolio',
+    caption: 'HTML Tailwind CSS React Next.js Typescript',
+    description: 'A personal web portfolio designed to showcase my skills, projects, and professional experience.',
+    situation: 'The project was aimed at creating an online portfolio to display my web development work and highlight my expertise.',
+    task: 'My responsibility was to design and develop a visually appealing and user-friendly portfolio that effectively communicated my work.',
+    action: 'I built the portfolio using HTML, CSS, and JavaScript for the frontend, and added interactive elements with React to enhance user experience.',
+    result: 'The portfolio has served as a powerful tool in attracting potential clients and employers, helping me secure multiple freelance opportunities.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+    visuals: ['/portfolio.jpg'],
+    buttons: [
+      { title: "Live <~>", onClick: () => { window.open("https://ikhsanfrcn.vercel.app", "_blank"); }, className: "border-primary" },
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[1].slug}`; }, className: "border-gray text-gray" }
+    ],
+},
+{
+  slug: 'fivem-game-server',
+  title: 'FiveM Custom Game Server',
+  caption: 'Lua FiveM Server Optimization and Management',
+  description: 'A custom-built FiveM game server designed to provide a unique and seamless player experience.',
+  situation: 'The project involved creating, optimizing, and maintaining a bespoke FiveM game server with a focus on performance and player engagement.',
+  task: 'I was responsible for managing the entire server infrastructure, ensuring smooth gameplay, addressing technical issues, and enhancing the user experience.',
+  action: 'I utilized Lua for both client-side and server-side scripting to customize gameplay, troubleshoot performance issues, and integrate user-friendly UI/UX elements.',
+  result: 'The custom server attracted a loyal player base, improved player retention, reduced downtime, and created a highly immersive gaming environment.',
+  technologies: ['Lua', 'FiveM'],
+  visuals: ['/fivem.jpeg'],
+  buttons: [
+    { title: "Cached >=", onClick: () => { }, className: "border-gray text-gray" },
+    { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[2].slug}`; }, className: "border-gray text-gray" }
+  ],
+}
+
+
+  
 ];

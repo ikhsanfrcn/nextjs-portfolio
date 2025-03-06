@@ -1,7 +1,7 @@
-import { CompleteAppsSection } from '@/components/organisms/projects/CompleteAppsSection';
 import { MainTemplate } from '../../components/templates/MainTemplate';
-import { SmallProjectSection } from '@/components/organisms/projects/SmallProjectSection';
 import { Text } from '@/components/atoms/Text';
+import { FullProjectSection } from '@/components/organisms/projects/FullProjectSection';
+import { SmallProjectSection } from '@/components/organisms/projects/SmallProjectSection';
 
 export const metadata = {
   title: "My Projects | Creative Web Portfolio",
@@ -19,7 +19,7 @@ export default function Projects() {
         <h1 className='text-3xl text-primary mt-10'>/<span className='text-white'>projects</span></h1>
         <Text className='text-sm'>List of my projects</Text>
       </div>
-      <CompleteAppsSection />
+      <FullProjectSection />
       <SmallProjectSection />
     </MainTemplate>
   );
