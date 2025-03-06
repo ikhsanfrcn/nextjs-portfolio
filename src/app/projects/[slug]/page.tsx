@@ -2,12 +2,11 @@ import { ProjectsData } from "@/data/projectsData";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-interface ProjectDetailProps {
-  params: { slug: string };
-}
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const project = ProjectsData.find((p) => p.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+
+  const project = ProjectsData.find((p) => p.slug === slug);
 
   if (!project) {
     return {
@@ -16,7 +15,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
   }
 
-  const currentUrl = `https://ikhsanfrcn.vercel.app/projects/${project.slug}`;
+  const currentUrl = `https://ikhsanfrcn.vercel.app/projects/${slug}`;
+  const imageUrl = project.visuals.length > 0 ? project.visuals[0] : "/default-thumbnail.jpg";
 
   return {
     title: `${project.title} | Creative Web Portfolio`,
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       type: "article",
       images: [
         {
-          url: project.visuals[0] || "/default-thumbnail.jpg",
+          url: imageUrl,
           width: 1200,
           height: 630,
           alt: project.title,
@@ -39,14 +39,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       card: "summary_large_image",
       title: `${project.title} | Creative Web Portfolio`,
       description: project.description.substring(0, 150),
-      images: [project.visuals[0] || "/default-thumbnail.jpg"],
+      images: [imageUrl],
     },
   };
 }
 
-export default async function ProjectDetail({ params }: ProjectDetailProps) {
-  
-  const project = ProjectsData.find((p) => p.slug === params.slug);
+const ProjectDetail = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params; 
+  const project = ProjectsData.find((p) => p.slug === slug);
 
   if (!project) {
     return notFound();
@@ -106,3 +106,5 @@ export default async function ProjectDetail({ params }: ProjectDetailProps) {
     </div>
   );
 }
+
+export default ProjectDetail;
