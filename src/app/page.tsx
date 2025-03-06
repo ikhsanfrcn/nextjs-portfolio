@@ -6,14 +6,6 @@ import { SkillSection } from "@/components/organisms/home/SkillSection";
 import { AboutSection } from "@/components/organisms/home/AboutSection";
 import { ContactSection } from "@/components/organisms/home/ContactSection";
 
-export const metadata = {
-    title: "Portfolio",
-    description: "Portfolio",
-    opengraph: {
-        url: ""
-    }
-};
-
 export default function Home() {
   return (
     <MainTemplate>

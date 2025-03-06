@@ -25,7 +25,9 @@ export const MobileMenu: React.FC<MobileMenu> = ({
           />
         ))}
       </div>
-      <SocialIcons />
+      <div className="pt-10">
+        <SocialIcons />
+      </div>
     </div>
   );
 };

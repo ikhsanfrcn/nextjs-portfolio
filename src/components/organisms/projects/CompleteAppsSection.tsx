@@ -1,6 +1,8 @@
 'use client'
+
 import { ProjectCard } from "@/components/molecules/ProjectCard";
-import { projectsData } from "@/data/projects";
+import { ProjectsData } from "@/data/projectsData";
+
 
 export const CompleteAppsSection: React.FC = () => {
   return (
@@ -11,10 +13,10 @@ export const CompleteAppsSection: React.FC = () => {
         </h2>
       </div>
       <div className="grid md:grid-cols-3 gap-6 mt-5">
-        {projectsData.map((project, index) => (
+        {ProjectsData.map((project, index) => (
           <ProjectCard
             key={index}
-            img={project.img}
+            visuals={project.visuals}
             caption={project.caption}
             title={project.title}
             description={project.description}

@@ -12,7 +12,7 @@ export const AboutImage: React.FC = () => {
         className="w-[25%] h-auto absolute top-10 left-10 md:left-0 text-white text-6xl md:text-8xl"
       />
       <Image
-        src="/image.png"
+        src="/profile-removebg.png"
         width={0}
         height={0}
         alt="about-me"

@@ -3,6 +3,15 @@ import { MainTemplate } from '../../components/templates/MainTemplate';
 import { SmallProjectSection } from '@/components/organisms/projects/SmallProjectSection';
 import { Text } from '@/components/atoms/Text';
 
+export const metadata = {
+  title: "My Projects | Creative Web Portfolio",
+  description:
+    "Explore a selection of my standout web development projects, showcasing creativity, technical skills, and problem-solving abilities.",
+  opengraph: {
+    url: "",
+  },
+};
+
 export default function Projects() {
   return (
     <MainTemplate>

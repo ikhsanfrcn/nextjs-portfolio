@@ -4,7 +4,7 @@ import { Icon } from './Icon';
 
 export const SocialIcons: React.FC = () => {
   return (
-    <div className="flex justify-center pt-10 gap-7 text-3xl">
+    <div className="flex justify-center gap-7 text-3xl text-gray">
       <Icon
         Component={FaGithub}
         link="https://github.com/ikhsanfrcn"

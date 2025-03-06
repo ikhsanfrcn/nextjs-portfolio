@@ -13,12 +13,12 @@ export const HeroImage: React.FC = () => {
           className="absolute top-20 left-5 -z-10 text-primary text-6xl md:text-8xl"
         />
         <Image
-          src="/profile.png"
+          src="/anonymous.png"
           width={0}
           height={0}
-          alt="Profile"
+          alt="Hero Image"
           sizes="100vw"
-          className="w-full h-auto"
+          className="w-[300px] h-auto"
         />
         <Icon
           Component={LuSquareDashedKanban}
@@ -27,9 +27,10 @@ export const HeroImage: React.FC = () => {
       </div>
       <div className="flex items-center gap-3 border border-white p-2">
         <div className="w-5 h-5 bg-primary"></div>
-        <Text>
-          Currently working on <span className="text-white"> Portfolio</span>
-        </Text>
+        <div>
+        <Text>Currently working on</Text>
+        <span className="text-white"> Company Profile</span>
+        </div>
       </div>
     </div>
   );

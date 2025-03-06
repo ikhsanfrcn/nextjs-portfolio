@@ -1,6 +1,6 @@
 'use client'
 import { SmallProjectCard } from "@/components/molecules/SmallProjectCard";
-import { smallProjectsData } from "@/data/projects";
+import { smallProjectsData } from "@/data/projectsData";
 
 export const SmallProjectSection: React.FC = () => {
   return (

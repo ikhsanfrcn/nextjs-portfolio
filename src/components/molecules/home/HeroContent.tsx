@@ -7,10 +7,10 @@ import TypeAnimations from "../../atoms/Type";
 
 export const HeroContent: React.FC = () => {
   return (
-    <div className='md:w-[70%]'>
+    <div className='md:w-[50%]'>
       <Title className="text-3xl font-bold">
         Ikhsan is a <span className="text-primary">web designer</span> and <br />
-        <span className="text-primary">front-end developer</span>
+        <span className="text-primary">full-stack developer</span>
       </Title>
       <Motion direction="left">
         <div className="flex items-center gap-2">

@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Text } from "../../atoms/Text";
+import { skillsData } from "@/data/skillsData";
+import { SkillListItem } from "@/components/molecules/SkillCard";
 
 export const SkillSection: React.FC = () => {
   return (
@@ -30,34 +31,30 @@ export const SkillSection: React.FC = () => {
         <div className="md:w-[100%] lg:w-[50%]">
           <div className="grid md:grid-cols-3 gap-5 mt-10 md:mt-0">
             <div className="flex flex-col gap-5">
-              <div className="border border-gray-400 ">
-                <h4 className="border-b border-gray-400 p-2">Languages</h4>
-                <Text className="p-2">TypeScript Lua Python JavaScript</Text>
-              </div>
+              <SkillListItem
+                title={skillsData[0].title}
+                skills={skillsData[0].skills}
+              />
             </div>
             <div className="flex flex-col gap-5">
-              <div className="border border-gray-400">
-                <h4 className="border-b border-gray-400 p-2">Databases</h4>
-                <Text className="p-2">MongoDB PostgreSQL MySQL</Text>
-              </div>
-              <div className="border border-gray-400">
-                <h4 className="border-b border-gray-400 p-2">Other</h4>
-                <Text className="p-2">HTML CSS EJS SCSS REST Jinja</Text>
-              </div>
+              <SkillListItem
+                title={skillsData[1].title}
+                skills={skillsData[1].skills}
+              />
+              <SkillListItem
+                title={skillsData[2].title}
+                skills={skillsData[2].skills}
+              />
             </div>
             <div className="flex flex-col gap-5">
-              <div className="border border-gray-400">
-                <h4 className="border-b border-gray-400 p-2">Tools</h4>
-                <Text className="p-2">
-                  VSCode Neovim Linux Figma XFCE Arch Git Font Awesome
-                </Text>
-              </div>
-              <div className="border border-gray-400">
-                <h4 className="border-b border-gray-400 p-2">Frameworks</h4>
-                <Text className="p-2">
-                  React Vue Disnake Discord.js Flask Express.js
-                </Text>
-              </div>
+              <SkillListItem
+                title={skillsData[3].title}
+                skills={skillsData[3].skills}
+              />
+              <SkillListItem
+                title={skillsData[4].title}
+                skills={skillsData[4].skills}
+              />
             </div>
           </div>
         </div>
@@ -65,39 +62,3 @@ export const SkillSection: React.FC = () => {
     </section>
   );
 };
-
-
-{/* <div className="md:w-[100%]">
-          <div className="grid md:grid-cols-3 gap-5 mt-10 md:mt-0">
-            <div className="grid md:grid-rows-5 gap-5">
-              <div className="border border-gray-400 ">
-                <h4 className="border-b border-gray-400 p-2">Languages</h4>
-                <Text className="p-2">TypeScript Lua Python JavaScript</Text>
-              </div>
-            </div>
-            <div className="grid md:grid-rows-4 gap-5">
-              <div className="border border-gray-400">
-                <h4 className="border-b border-gray-400 p-2">Databases</h4>
-                <Text className="p-2">MongoDB PostgreSQL MySQL</Text>
-              </div>
-              <div className="border border-gray-400">
-                <h4 className="border-b border-gray-400 p-2">Other</h4>
-                <Text className="p-2">HTML CSS EJS SCSS REST Jinja</Text>
-              </div>
-            </div>
-            <div className="grid md:grid-rows-3 gap-5">
-              <div className="border border-gray-400">
-                <h4 className="border-b border-gray-400 p-2">Tools</h4>
-                <Text className="p-2">
-                  VSCode Neovim Linux Figma XFCE Arch Git Font Awesome
-                </Text>
-              </div>
-              <div className="border border-gray-400">
-                <h4 className="border-b border-gray-400 p-2">Frameworks</h4>
-                <Text className="p-2">
-                  React Vue Disnake Discord.js Flask Express.js
-                </Text>
-              </div>
-            </div>
-          </div>
-        </div> */}

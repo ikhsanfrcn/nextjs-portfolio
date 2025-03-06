@@ -1,7 +1,7 @@
 'use client'
 import Slider from "react-slick";
 import { ProjectCard } from "../ProjectCard";
-import { projectsData } from "@/data/projects";
+import { ProjectsData } from "@/data/projectsData";
 
 export const ProjectMobile: React.FC = () => {
   const settings = {
@@ -17,10 +17,10 @@ export const ProjectMobile: React.FC = () => {
   return (
     <div className="pt-10">
       <Slider {...settings}>
-        {projectsData.map((project, index) => (
+        {ProjectsData.map((project, index) => (
           <div key={index}>
             <ProjectCard
-              img={project.img}
+              visuals={project.visuals}
               caption={project.caption}
               title={project.title}
               description={project.description}

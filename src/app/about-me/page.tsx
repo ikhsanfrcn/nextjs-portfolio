@@ -3,6 +3,15 @@ import { MainTemplate } from "../../components/templates/MainTemplate";
 import { SkillSection } from "@/components/organisms/about-me/SkillSection";
 import { AboutMeSection } from "@/components/organisms/about-me/AboutMeSection";
 
+export const metadata = {
+  title: "About Me | Creative Web Portfolio",
+  description: "Learn more about my background, skills, and journey as a web developer. Discover the passion behind the projects I create.",
+  opengraph: {
+      url: "" 
+  }
+};
+
+
 export default function AboutMe() {
   return (
     <MainTemplate>
