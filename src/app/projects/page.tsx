@@ -1,7 +1,7 @@
 import { MainTemplate } from '../../components/templates/MainTemplate';
 import { Text } from '@/components/atoms/Text';
 import { FullProjectSection } from '@/components/organisms/projects/FullProjectSection';
-import { SmallProjectSection } from '@/components/organisms/projects/SmallProjectSection';
+import { OfficeProjectSection } from '@/components/organisms/projects/OfficeProjectSection';
 
 export const metadata = {
   title: "My Projects | Creative Web Portfolio",
@@ -20,7 +20,7 @@ export default function Projects() {
         <Text className='text-sm'>List of my projects</Text>
       </div>
       <FullProjectSection />
-      <SmallProjectSection />
+      <OfficeProjectSection />
     </MainTemplate>
   );
 }

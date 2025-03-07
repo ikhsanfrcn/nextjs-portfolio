@@ -1,9 +1,16 @@
+import { Icon } from "@/components/atoms/Icon";
 import { ProjectsData } from "@/data/projectsData";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { BsGithub } from "react-icons/bs";
+import { TfiWorld } from "react-icons/tfi";
+import Link from "next/link";
 
-
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
 
   const project = ProjectsData.find((p) => p.slug === slug);
@@ -16,7 +23,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   const currentUrl = `https://ikhsanfrcn.vercel.app/projects/${slug}`;
-  const imageUrl = project.visuals.length > 0 ? project.visuals[0] : "/default-thumbnail.jpg";
+  const imageUrl =
+    project.visuals.length > 0 ? project.visuals[0] : "/default-thumbnail.jpg";
 
   return {
     title: `${project.title} | Creative Web Portfolio`,
@@ -44,17 +52,39 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-const ProjectDetail = async ({ params }: { params: Promise<{ slug: string }> }) => {
-  const { slug } = await params; 
-  const project = ProjectsData.find((p) => p.slug === slug);
+const linkIcons = {
+  preview: TfiWorld,
+  github: BsGithub,
+};
 
-  if (!project) {
+const ProjectDetail = async ({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) => {
+  const { slug } = await params;
+  const projectIndex = ProjectsData.findIndex((p) => p.slug === slug);
+
+  if (projectIndex === -1) {
     return notFound();
   }
 
+  const project = ProjectsData[projectIndex];
+  const prevProject = ProjectsData[projectIndex - 1];
+  const nextProject = ProjectsData[projectIndex + 1];
+
   return (
     <div className="container mx-auto p-6">
-      <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
+      {/* Back Button */}
+      <div>
+        <Link
+          href="/projects"
+          className="text-lg font-semibold text-gray hover:underline"
+        >
+          ← Back to Projects
+        </Link>
+      </div>
+      <h1 className="text-4xl font-bold mb-6 pt-10">{project.title}</h1>
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Project Brief</h2>
         <p>{project.description}</p>
@@ -87,8 +117,34 @@ const ProjectDetail = async ({ params }: { params: Promise<{ slug: string }> }) 
         </ul>
       </section>
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Visuals</h2>
-        <div className="flex max-sm:flex-col items-center gap-4">
+        <div className="flex items-center gap-5">
+          <h2 className="text-2xl font-semibold">Visuals</h2>
+          {project.links && project.links.length > 0 && (
+            <div className="flex gap-5">
+              {project.links.map((link, index) => (
+                <div key={index} className="flex items-center gap-3">
+                  {Object.keys(linkIcons).map((key) => {
+                    const iconKey = key as keyof typeof linkIcons;
+                    if (link[iconKey]) {
+                      return (
+                        <Icon
+                          key={key}
+                          Component={linkIcons[iconKey]}
+                          link={link[iconKey]}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-2xl hover:text-primary"
+                        />
+                      );
+                    }
+                    return null;
+                  })}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+        <div className="flex flex-wrap max-sm:flex-col items-center gap-4 pt-10">
           {project.visuals.map((visual, index) => (
             <Image
               key={index}
@@ -97,14 +153,37 @@ const ProjectDetail = async ({ params }: { params: Promise<{ slug: string }> }) 
               height={0}
               sizes="100vw"
               alt={`Project visual ${index + 1}`}
-              className="rounded-lg shadow-lg"
-              style={{ width: "300px" }}
+              className="rounded-lg shadow-lg w-[250px] h-auto object-contain border border-gray hover:scale-[150%] transition-all"
             />
           ))}
         </div>
       </section>
+
+      {/* Navigation Buttons */}
+      <div className="flex justify-between mt-10">
+        <div>
+          {prevProject && (
+            <Link
+              href={`/projects/${prevProject.slug}`}
+              className="text-lg font-semibold text-gray hover:underline"
+            >
+              ← Previous Project
+            </Link>
+          )}
+        </div>
+        <div>
+          {nextProject && (
+            <Link
+              href={`/projects/${nextProject.slug}`}
+              className="text-lg font-semibold text-gray hover:underline"
+            >
+              Next Project →
+            </Link>
+          )}
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default ProjectDetail;

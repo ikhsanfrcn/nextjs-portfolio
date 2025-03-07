@@ -1,18 +1,24 @@
-export const smallProjectsData = [
+export const officeProjectsData = [
     {
-        caption: "HTML CSS Laravel",
-        title: "Bali Beauty Center",
-        description: "Website for Bali Beauty Center",
+        caption: "HTML CSS TailwindCSS Laravel PHP",
+        title: "BVR Group Asia",
+        description: "Website for BVR Group Asia",
         buttons: [{ title: "Cached >=", onClick: () => { }, className: "border-gray text-gray" }],
     },
     {
-        caption: "HTML CSS Laravel",
+        caption: "HTML CSS TailwindCSS Laravel Livewire PHP",
+        title: "BVR Property",
+        description: "Website for BVR Group Asia",
+        buttons: [{ title: "Cached >=", onClick: () => { }, className: "border-gray text-gray" }],
+    },
+    {
+        caption: "HTML CSS TailwindCSS JQuery Laravel",
         title: "Sirfin Global",
         description: "Website Sirfin Global",
         buttons: [{ title: "Cached >=", onClick: () => { }, className: "border-gray text-gray" }],
     },
     {
-        caption: "HTML CSS Laravel",
+        caption: "HTML CSS TailwindCSS Laravel Livewire PHP",
         title: "Bali Coffe Club",
         description: "Website for Bali Coffe Club",
         buttons: [{ title: "Cached >=", onClick: () => { }, className: "border-gray text-gray" }],

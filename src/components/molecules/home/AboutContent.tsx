@@ -11,25 +11,30 @@ export const AboutContent: React.FC<AboutContentProps> = ({
 }) => {
   return (
     <div className="md:w-[50%]">
-      <Text className="mt-4">
-        Hello, i’m Ikhsan!
-        <br />
-        <br />
-        Currently improving my skills at Purwadhika Bootcamp, I am a Software
-        Developer focused on building scalable, user-friendly applications. I
-        used JavaScript library like React.js and Next.js Framework, paired with
-        CSS frameworks such as Tailwind CSS for creating responsive interfaces.
-        On the backend, I work with Node.js, Express.js, and databases like
-        PostgreSQL and MongoDB to develop secure and efficient APIs.
-        <br />
-        <br />
-        The experience of being a developer and administrator of a game server
-        has honed my problem solving and technical abilities to the finer
-        points. As a developer, I am passionate about writing clean,
-        maintainable code, and thus, committed to building high-performance
-        applications. I keep in touch with the latest technologies and trends in
-        order to keep improving my expertise.
-      </Text>
+      <div className="flex flex-col gap-5 pt-10">
+        <Text>Hi, I’m Ikhsan!</Text>
+        <Text>
+          I am currently enhancing my skills at Purwadhika Bootcamp. As a
+          Software Developer, my focus is on creating scalable, user-friendly
+          applications. I am passionate about building efficient,
+          high-performance solutions and continually learning to improve my
+          expertise.
+        </Text>
+        <Text>
+          I specialize in front-end technologies like React.js and Next.js,
+          paired with CSS frameworks such as Tailwind CSS to build responsive
+          and visually appealing interfaces. On the back end, I work with
+          Node.js, Express.js, and databases like PostgreSQL and MongoDB to
+          develop secure and efficient APIs.
+        </Text>
+        <Text>
+          As both a developer and game server administrator, my problem-solving
+          and technical abilities have been sharpened. I am committed to writing
+          clean, maintainable code and delivering high-quality applications. I
+          prioritize staying up-to-date with the latest technologies to
+          continually grow as a developer.
+        </Text>
+      </div>
       {showButton && (
         <Button
           onClick={() => window.open("/about-me", "_self")}
