@@ -3,7 +3,7 @@ import QuoteBox from '../../molecules/home/QuoteBox';
 
 export const QuoteSection: NextPage = () => {
   return (
-    <section className="mt-12 md:w-[90%]">
+    <section className='pt-10'>
       <QuoteBox
         quote="The only limit to our realization of tomorrow is our doubts of today."
         author="Franklin D. Roosevelt"
