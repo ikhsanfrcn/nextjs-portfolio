@@ -23,11 +23,4 @@ export const officeProjectsData = [
         description: "Website for Bali Coffe Club",
         buttons: [{ title: "Cached >=", onClick: () => { }, className: "border-gray text-gray" }],
     },
-    {
-        caption: "Switft Xcode",
-        title: "iOS News App",
-        description: "iOS News App",
-        buttons: [{ title: "Cached >=", onClick: () => { }, className: "border-gray text-gray" }],
-    },
-    
 ];
