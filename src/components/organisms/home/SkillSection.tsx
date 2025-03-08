@@ -18,7 +18,7 @@ export const SkillSection: React.FC = () => {
         {/* Image */}
         <div className="md:w-[70%] lg:w-[50%] flex justify-center">
           <Image
-            src="/skillsimg.png"
+            src="/skillsimg.webp"
             width={0}
             height={0}
             alt="Skills Section"

@@ -12,12 +12,12 @@ export const AboutImage: React.FC = () => {
         className="w-[25%] h-auto absolute top-10 left-10 md:left-0 text-white text-6xl md:text-8xl"
       />
       <Image
-        src="/profile-removebg.png"
+        src="/profile-removebg.webp"
         width={0}
         height={0}
         alt="about-me"
         sizes="100vw"
-        className="border-b w-full h-auto border-primary"
+        className="border-b max-sm:w-[70%] w-[500px] h-auto border-primary"
       />
       <Image
         src="/frame30.png"

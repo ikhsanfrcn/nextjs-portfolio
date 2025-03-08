@@ -118,7 +118,7 @@ const ProjectDetail = async ({
       </section>
       <section className="mb-8">
         <div className="flex items-center gap-5">
-          <h2 className="text-2xl font-semibold">Visuals</h2>
+          <h2 className="text-2xl font-semibold">Links:</h2>
           {project.links && project.links.length > 0 && (
             <div className="flex gap-5">
               {project.links.map((link, index) => (
@@ -144,7 +144,8 @@ const ProjectDetail = async ({
             </div>
           )}
         </div>
-        <div className="flex flex-wrap max-sm:flex-col items-center gap-4 pt-10">
+        <h2 className="text-2xl font-semibold pt-5">Visuals:</h2>
+        <div className="flex flex-wrap max-sm:flex-col items-center gap-4 pt-5">
           {project.visuals.map((visual, index) => (
             <Image
               key={index}

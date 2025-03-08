@@ -25,7 +25,7 @@ export const ProjectsData: ProjectCardProps[] = [
     action: 'I utilized Next.js for the frontend, integrated it with the backend API, and worked closely with the UX team.',
     result: 'The new design increased user retention by 20%, and the client was highly satisfied with the outcome.',
     technologies: ['React', 'Next.js', 'Tailwind CSS', 'Backendless'],
-    visuals: ['/blogapp.png', '/blogapp2.png', '/blogapp3.png', '/blogapp4.png'],
+    visuals: ['/blogapp.webp', '/blogapp2.webp', '/blogapp3.webp', '/blogapp4.webp'],
     links: [
       { preview: "https://nextjs-loremipsum.vercel.app" }, 
       { github: "https://github.com/ikhsanfrcn/nextjs-blog" }
@@ -46,7 +46,7 @@ export const ProjectsData: ProjectCardProps[] = [
     action: 'I built the portfolio using HTML, CSS, and JavaScript for the frontend, and added interactive elements with React to enhance user experience.',
     result: 'The portfolio has served as a powerful tool in attracting potential clients and employers, helping me secure multiple freelance opportunities.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
-    visuals: ['/portfolio.jpg'],
+    visuals: ['/portfolio.webp'],
     links: [
       { preview: "https://ikhsanfrcn.vercel.app" }, 
       { github: "https://github.com/ikhsanfrcn/nextjs-portfolio" }
@@ -66,7 +66,7 @@ export const ProjectsData: ProjectCardProps[] = [
     action: 'I utilized Lua for both client-side and server-side scripting to customize gameplay, troubleshoot performance issues, and integrate user-friendly UI/UX elements.',
     result: 'The custom server attracted a loyal player base, improved player retention, reduced downtime, and created a highly immersive gaming environment.',
     technologies: ['Lua', 'FiveM'],
-    visuals: ['/fivem.jpeg'],
+    visuals: ['/fivem.webp'],
     buttons: [
       { title: "Live <~>", onClick: () => { window.open("https://fivem-server.vercel.app", "_blank"); }, className: "border-primary" },
       { title: "More >", onClick: () => { window.location.href = `/projects/${ProjectsData[2].slug}`; }, className: "border-gray text-gray" }

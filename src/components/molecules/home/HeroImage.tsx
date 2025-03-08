@@ -13,7 +13,7 @@ export const HeroImage: React.FC = () => {
           className="absolute top-20 left-5 -z-10 text-primary text-6xl md:text-8xl"
         />
         <Image
-          src="/anonymous.png"
+          src="/anonymous.webp"
           width={0}
           height={0}
           alt="Hero Image"
