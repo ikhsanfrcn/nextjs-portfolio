@@ -34,8 +34,8 @@ export const ProjectsData: ProjectCardProps[] = [
       { "github": "https://github.com/nextjs-compro-centercode" }
     ],
     buttons: [
-      { title: "Our Work <~>", onClick: () => { window.open("https://company-portfolio.com", "_blank"); }, className: "border-primary" },
-      { title: "Learn More >", onClick: () => { window.location.href = `/projects/${ProjectsData[0].slug}`; }, className: "border-gray text-gray" }
+      { title: "Live <~>", onClick: () => { window.open("https://company-portfolio.com", "_blank"); }, className: "border-primary" },
+      { title: "More >", onClick: () => { window.location.href = `/projects/${ProjectsData[0].slug}`; }, className: "border-gray text-gray" }
     ]
   },  
   {
