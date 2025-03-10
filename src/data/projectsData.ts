@@ -16,6 +16,29 @@ export type ProjectCardProps = {
 
 export const ProjectsData: ProjectCardProps[] = [
   {
+    slug: "centercode",
+    title: "CenterCode | Expert in Web & Mobile App Development, UI/UX Design",
+    caption: "HTML Tailwind CSS React Next.js TypeScript",
+    description: "We specialize in creating high-performance mobile and web applications with a focus on intuitive design and seamless user experiences. Our expertise spans across mobile app development, web solutions, and comprehensive UI/UX design.",
+    situation: "The goal was to help clients transform their ideas into functional, user-friendly applications with scalable backend solutions.",
+    task: "Our team was responsible for end-to-end development, including mobile app development, web platforms, and crafting compelling UI/UX designs.",
+    action: "We leveraged React and Flutter for building responsive mobile and web applications, integrated seamless backends using Node.js, and followed modern design principles to ensure excellent user experiences.",
+    result: "Our solutions helped clients enhance user engagement, streamline operations, and improve conversion rates, with significant business growth observed post-launch.",
+    technologies: ["HTML", "React", "Tailwind CSS", "Next.js"],
+    visuals: [
+      "/centercode.webp",
+      "/centercode2.webp",
+    ],
+    links: [
+      { "preview": "https://centercode.vercel.app " },
+      { "github": "https://github.com/nextjs-compro-centercode" }
+    ],
+    buttons: [
+      { title: "Our Work <~>", onClick: () => { window.open("https://company-portfolio.com", "_blank"); }, className: "border-primary" },
+      { title: "Learn More >", onClick: () => { window.location.href = `/projects/${ProjectsData[0].slug}`; }, className: "border-gray text-gray" }
+    ]
+  },  
+  {
     slug: 'loremipsum-blog-app',
     title: 'Lorem Ipsum Blog App',
     caption: 'HTML Tailwind CSS React Next.js TypeScript Backendless',
@@ -24,7 +47,7 @@ export const ProjectsData: ProjectCardProps[] = [
     task: 'My responsibility was to design a user interface that was both visually appealing and functional.',
     action: 'I utilized Next.js for the frontend, integrated it with the backend API, and worked closely with the UX team.',
     result: 'The new design increased user retention by 20%, and the client was highly satisfied with the outcome.',
-    technologies: ['React', 'Next.js', 'Tailwind CSS', 'Backendless'],
+    technologies: ['HTML', 'React', 'Next.js', 'Tailwind CSS', 'Backendless'],
     visuals: ['/blogapp.webp', '/blogapp2.webp', '/blogapp3.webp', '/blogapp4.webp'],
     links: [
       { preview: "https://nextjs-loremipsum.vercel.app" }, 
