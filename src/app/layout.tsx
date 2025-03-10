@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-background text-white font-fira-code max-w-[1440px] mx-auto ${geistSans.variable} ${geistMono.variable} ${firaCode.variable} antialiased`}
+        className={`bg-background text-white font-fira-code max-w-[1024px] mx-auto ${geistSans.variable} ${geistMono.variable} ${firaCode.variable} antialiased`}
       >
         <Navbar />
         {children}

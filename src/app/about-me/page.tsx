@@ -2,7 +2,7 @@ import { Text } from "@/components/atoms/Text";
 import { MainTemplate } from "../../components/templates/MainTemplate";
 import { SkillSection } from "@/components/organisms/about-me/SkillSection";
 import { AboutMeSection } from "@/components/organisms/about-me/AboutMeSection";
-// import { ExperienceSection } from "@/components/organisms/about-me/ExperienceSection";
+import { ExperienceSection } from "@/components/organisms/about-me/ExperienceSection";
 
 export const metadata = {
   title: "About Me | Creative Web Portfolio",
@@ -24,7 +24,7 @@ export default function AboutMe() {
       </div>
       <AboutMeSection />
       <SkillSection />
-      {/* <ExperienceSection /> */}
+      <ExperienceSection/>
     </MainTemplate>
   );
 }

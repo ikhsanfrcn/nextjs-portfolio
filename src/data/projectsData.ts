@@ -35,7 +35,7 @@ export const ProjectsData: ProjectCardProps[] = [
     ],
     buttons: [
       { title: "Live <~>", onClick: () => { window.open("https://company-portfolio.com", "_blank"); }, className: "border-primary" },
-      { title: "More >", onClick: () => { window.location.href = `/projects/${ProjectsData[0].slug}`; }, className: "border-gray text-gray" }
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[0].slug}`; }, className: "border-gray text-gray" }
     ]
   },  
   {
@@ -76,7 +76,7 @@ export const ProjectsData: ProjectCardProps[] = [
     ],
     buttons: [
       { title: "Live <~>", onClick: () => { window.open("https://ikhsanfrcn.vercel.app", "_blank"); }, className: "border-primary" },
-      { title: "More >", onClick: () => { window.location.href = `/projects/${ProjectsData[1].slug}`; }, className: "border-gray text-gray" }
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[1].slug}`; }, className: "border-gray text-gray" }
     ],
   },
   {
@@ -92,7 +92,7 @@ export const ProjectsData: ProjectCardProps[] = [
     visuals: ['/fivem.webp'],
     buttons: [
       { title: "Live <~>", onClick: () => { window.open("https://fivem-server.vercel.app", "_blank"); }, className: "border-primary" },
-      { title: "More >", onClick: () => { window.location.href = `/projects/${ProjectsData[2].slug}`; }, className: "border-gray text-gray" }
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[2].slug}`; }, className: "border-gray text-gray" }
     ],
   }
 ];
