@@ -91,7 +91,6 @@ export const ProjectsData: ProjectCardProps[] = [
     technologies: ['Lua', 'FiveM'],
     visuals: ['/fivem.webp'],
     buttons: [
-      { title: "Live <~>", onClick: () => { window.open("https://fivem-server.vercel.app", "_blank"); }, className: "border-primary" },
       { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[2].slug}`; }, className: "border-gray text-gray" }
     ],
   }

@@ -14,9 +14,8 @@ export const AboutContent: React.FC<AboutContentProps> = ({
       <div className="flex flex-col gap-5 pt-10">
         <Text>Hi, I’m Ikhsan!</Text>
         <Text>
-          I am currently enhancing my skills at Purwadhika Bootcamp. As a
-          Software Developer, my focus is on creating scalable, user-friendly
-          applications. I am passionate about building efficient,
+          As a Software Developer, my focus is on creating scalable,
+          user-friendly applications. I am passionate about building efficient,
           high-performance solutions and continually learning to improve my
           expertise.
         </Text>
