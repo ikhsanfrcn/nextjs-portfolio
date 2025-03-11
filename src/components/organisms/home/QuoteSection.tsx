@@ -5,12 +5,12 @@ export const QuoteSection: NextPage = () => {
   return (
     <section className='pt-10'>
       <QuoteBox
-        quote="The only limit to our realization of tomorrow is our doubts of today."
-        author="Franklin D. Roosevelt"
+        quote="First, solve the problem. Then, write the code."
+        author="John Johnson"
       />
       <QuoteBox
-        quote="The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well."
-        author="Ralph Waldo Emerson"
+        quote="Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+        author="Martin Fowler"
       />
     </section>
   );
