@@ -20,7 +20,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   buttons = [],
 }) => {
   return (
-    <div className={`border border-gray ${className}`}>
+    <div className={`border border-gray ${className}`} data-aos="fade-up" data-aos-duration="1000">
       <Image
         src={visuals[0]}
         width={0}

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const AboutImage: React.FC = () => {
   return (
-    <div className="flex relative justify-center md:w-[30%]">
+    <div className="flex relative justify-center md:w-[30%]" data-aos="fade-left">
       <Image
         src="/frame29.png"
         width={0}

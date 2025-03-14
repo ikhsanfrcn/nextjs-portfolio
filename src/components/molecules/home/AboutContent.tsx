@@ -10,7 +10,7 @@ export const AboutContent: React.FC<AboutContentProps> = ({
   showButton = true,
 }) => {
   return (
-    <div className="md:w-[50%]">
+    <div className="md:w-[50%]" data-aos="fade-right">
       <div className="flex flex-col gap-5 pt-10">
         <Text>Hi, I’m Ikhsan!</Text>
         <Text>

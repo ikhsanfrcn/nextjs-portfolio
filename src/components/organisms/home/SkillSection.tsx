@@ -16,7 +16,7 @@ export const SkillSection: React.FC = () => {
 
       <div className="md:flex justify-between md:mt-5">
         {/* Image */}
-        <div className="md:w-[70%] lg:w-[50%] flex justify-center">
+        <div className="md:w-[70%] lg:w-[50%] flex justify-center" data-aos="zoom-in">
           <Image
             src="/skillsimg.webp"
             width={0}
@@ -30,13 +30,13 @@ export const SkillSection: React.FC = () => {
         {/* Skills */}
         <div className="md:w-[100%] lg:w-[50%]">
           <div className="grid md:grid-cols-3 gap-5 mt-10 md:mt-0">
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5" data-aos="flip-left">
               <SkillListItem
                 title={skillsData[0].title}
                 skills={skillsData[0].skills}
               />
             </div>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5" data-aos="fade-down">
               <SkillListItem
                 title={skillsData[1].title}
                 skills={skillsData[1].skills}
@@ -46,7 +46,7 @@ export const SkillSection: React.FC = () => {
                 skills={skillsData[2].skills}
               />
             </div>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5" data-aos="fade-down-left">
               <SkillListItem
                 title={skillsData[3].title}
                 skills={skillsData[3].skills}
