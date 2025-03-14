@@ -30,11 +30,11 @@ export const ProjectsData: ProjectCardProps[] = [
       "/centercode2.webp",
     ],
     links: [
-      { "preview": "https://centercode.vercel.app " },
+      { "preview": "https://centercode.vercel.app" },
       { "github": "https://github.com/nextjs-compro-centercode" }
     ],
     buttons: [
-      { title: "Live <~>", onClick: () => { window.open("https://company-portfolio.com", "_blank"); }, className: "border-primary" },
+      { title: "Live <~>", onClick: () => { window.open("https://centercode.vercel.app", "_blank"); }, className: "border-primary" },
       { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[0].slug}`; }, className: "border-gray text-gray" }
     ]
   },  
