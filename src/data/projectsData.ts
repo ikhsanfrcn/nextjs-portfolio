@@ -56,7 +56,7 @@ export const ProjectsData: ProjectCardProps[] = [
     
     buttons: [
       { title: "Live <~>", onClick: () => { window.open("https://nextjs-loremipsum.vercel.app", "_blank"); }, className: "border-primary" },
-      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[0].slug}`; }, className: "border-gray text-gray" }
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[1].slug}`; }, className: "border-gray text-gray" }
     ],
   },
   {
@@ -71,12 +71,10 @@ export const ProjectsData: ProjectCardProps[] = [
     technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
     visuals: ['/portfolio.webp'],
     links: [
-      { preview: "https://ikhsanfrcn.vercel.app" }, 
       { github: "https://github.com/ikhsanfrcn/nextjs-portfolio" }
     ],
     buttons: [
-      { title: "Live <~>", onClick: () => { window.open("https://ikhsanfrcn.vercel.app", "_blank"); }, className: "border-primary" },
-      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[1].slug}`; }, className: "border-gray text-gray" }
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[2].slug}`; }, className: "border-gray text-gray" }
     ],
   },
   {
@@ -91,7 +89,7 @@ export const ProjectsData: ProjectCardProps[] = [
     technologies: ['Lua', 'FiveM'],
     visuals: ['/fivem.webp'],
     buttons: [
-      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[2].slug}`; }, className: "border-gray text-gray" }
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[3].slug}`; }, className: "border-gray text-gray" }
     ],
   }
 ];

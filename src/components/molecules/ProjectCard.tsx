@@ -29,8 +29,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         alt={title}
         className="md:h-[150px] lg:h-[250px] w-full object-cover border-b border-gray"
       />
-      <div className="p-2 h-20 border-b border-gray">
-        <Text className="line-clamp-3 hover:line-clamp-none">{caption}</Text>
+      <div className="p-2 border-b border-gray">
+        <Text className="md:line-clamp-2 line-clamp-3 hover:line-clamp-none">{caption}</Text>
       </div>
       <div className="grid gap-3 p-4">
         <div className="h-10">
