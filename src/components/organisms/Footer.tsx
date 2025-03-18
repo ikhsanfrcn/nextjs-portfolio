@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
             </div>
             <Text className="text-sm md:text-md">ikhsanfrcn@gmail.com</Text>
           </div>
-          <p className="pt-1">Fullstack Web Developer</p>
+          <p className="pt-1">Software Developer</p>
         </section>
 
         <section className="pt-5 md:pt-0">
