@@ -50,7 +50,7 @@ export const Navbar: React.FC = () => {
         <div className="flex justify-between py-6 px-5">
           <div className="flex items-center">
             <AiOutlineLayout className="text-3xl" />
-            <h1 className="md:text-3xl font-bold ml-2">Portfolio</h1>
+            <p className="md:text-3xl font-bold ml-2">Portfolio</p>
           </div>
 
           <DesktopMenu

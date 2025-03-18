@@ -37,7 +37,7 @@ export const AboutContent: React.FC<AboutContentProps> = ({
       {showButton && (
         <Button
           onClick={() => window.open("/about-me", "_self")}
-          className="hidden border-primary md:block mt-6"
+          className="hidden border-primary md:block mt-6 hover:bg-[#C778DD]"
         >
           Read more
         </Button>

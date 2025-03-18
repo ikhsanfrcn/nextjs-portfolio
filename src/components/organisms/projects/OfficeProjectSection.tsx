@@ -1,5 +1,6 @@
 'use client'
-import { SmallProjectCard } from "@/components/molecules/SmallProjectCard";
+
+import { OfficeProjectCard } from "@/components/molecules/OfficeProjectCard";
 import { officeProjectsData } from "@/data/officeProjectsData";
 
 export const OfficeProjectSection: React.FC = () => {
@@ -12,7 +13,7 @@ export const OfficeProjectSection: React.FC = () => {
       </div>
       <div className="grid md:grid-cols-3 gap-6 mt-5">
         {officeProjectsData.map((project, index) => (
-          <SmallProjectCard
+          <OfficeProjectCard
             key={index}
             caption={project.caption}
             title={project.title}

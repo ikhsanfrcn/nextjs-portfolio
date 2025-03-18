@@ -9,7 +9,7 @@ type MenuItemProps = {
     return (
       <button
         onClick={onClick}
-        className={`${isActive ? "text-white" : "text-gray"} hover:text-white`}
+        className={`${isActive ? "text-white" : "text-grey"} hover:text-white`}
       >
         <span className="text-primary">#</span>
         {name}

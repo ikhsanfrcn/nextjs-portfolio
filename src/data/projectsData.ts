@@ -34,8 +34,8 @@ export const ProjectsData: ProjectCardProps[] = [
       { "github": "https://github.com/nextjs-compro-centercode" }
     ],
     buttons: [
-      { title: "Live <~>", onClick: () => { window.open("https://centercode.vercel.app", "_blank"); }, className: "border-primary" },
-      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[0].slug}`; }, className: "border-gray text-gray" }
+      { title: "Live <~>", onClick: () => { window.open("https://centercode.vercel.app", "_blank"); }, className: "border-primary hover:bg-[#C778DD]" },
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[0].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
     ]
   },  
   {
@@ -55,8 +55,8 @@ export const ProjectsData: ProjectCardProps[] = [
     ],
     
     buttons: [
-      { title: "Live <~>", onClick: () => { window.open("https://nextjs-loremipsum.vercel.app", "_blank"); }, className: "border-primary" },
-      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[1].slug}`; }, className: "border-gray text-gray" }
+      { title: "Live <~>", onClick: () => { window.open("https://nextjs-loremipsum.vercel.app", "_blank"); }, className: "border-primary hover:bg-[#C778DD]" },
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[1].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
     ],
   },
   {
@@ -74,7 +74,7 @@ export const ProjectsData: ProjectCardProps[] = [
       { github: "https://github.com/ikhsanfrcn/nextjs-portfolio" }
     ],
     buttons: [
-      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[2].slug}`; }, className: "border-gray text-gray" }
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[2].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
     ],
   },
   {
@@ -89,7 +89,7 @@ export const ProjectsData: ProjectCardProps[] = [
     technologies: ['Lua', 'FiveM'],
     visuals: ['/fivem.webp'],
     buttons: [
-      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[3].slug}`; }, className: "border-gray text-gray" }
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[3].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
     ],
   }
 ];

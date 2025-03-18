@@ -37,6 +37,10 @@ export default function ToolsContent() {
               desc="My SQL"
             />
             <ToolsItem
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"
+              desc="PostgreSQL"
+            />
+            <ToolsItem
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
               desc="HTML5"
             />

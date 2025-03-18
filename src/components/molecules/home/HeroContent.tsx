@@ -13,7 +13,7 @@ export const HeroContent: React.FC = () => {
       </Title>
       <Motion direction="left">
         <div className="flex items-center gap-2">
-          <span className="mt-5 h-16 md:h-5 relative text-lg text-gray">
+          <span className="mt-5 h-16 md:h-5 relative text-lg text-grey">
             <TypeAnimations
               sequence={["He crafts responsive websites", "where technologies meet creativity"]}
               delay={3000}
@@ -21,7 +21,7 @@ export const HeroContent: React.FC = () => {
           </span>
         </div>
       </Motion>
-      <Button onClick={() => window.open("/contact", "_self")} className="hidden border-primary md:block mt-12">Contact me !!</Button>
+      <Button onClick={() => window.open("/contact", "_self")} className="hidden border-primary md:block mt-12 hover:bg-[#C778DD]">Contact me !!</Button>
     </div>
   );
 };

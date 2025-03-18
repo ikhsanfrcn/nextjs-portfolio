@@ -25,8 +25,8 @@ export const ExperienceSection: React.FC = () => {
 
         {/* Right Side */}
         <div className="md:w-[25%]">
-          <h4 className="border border-gray p-2">Languages</h4>
-          <div className="border border-gray p-2">
+          <h4 className="border border-grey p-2">Languages</h4>
+          <div className="border border-grey p-2">
             <LanguageItem language="Indonesian" proficiency="Native" />
             <LanguageItem language="English" proficiency="Professional" />
             <LanguageItem language="Japanese" proficiency="A2" />

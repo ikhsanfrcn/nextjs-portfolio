@@ -79,7 +79,7 @@ const ProjectDetail = async ({
       <div>
         <Link
           href="/projects"
-          className="text-lg font-semibold text-gray hover:underline"
+          className="text-lg font-semibold text-grey hover:underline"
         >
           ← Back to Projects
         </Link>
@@ -133,7 +133,7 @@ const ProjectDetail = async ({
                           link={link[iconKey]}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-2xl hover:text-primary"
+                          className="text-2xl hover:text-black"
                         />
                       );
                     }
@@ -154,7 +154,7 @@ const ProjectDetail = async ({
               height={0}
               sizes="100vw"
               alt={`Project visual ${index + 1}`}
-              className="rounded-lg shadow-lg w-[250px] h-auto object-contain border border-gray hover:scale-[150%] transition-all"
+              className="rounded-lg shadow-lg w-[250px] h-auto object-contain border border-grey hover:scale-[150%] transition-all"
             />
           ))}
         </div>
@@ -166,7 +166,7 @@ const ProjectDetail = async ({
           {prevProject && (
             <Link
               href={`/projects/${prevProject.slug}`}
-              className="text-lg font-semibold text-gray hover:underline"
+              className="text-lg font-semibold text-grey hover:underline"
             >
               ← Previous Project
             </Link>
@@ -176,7 +176,7 @@ const ProjectDetail = async ({
           {nextProject && (
             <Link
               href={`/projects/${nextProject.slug}`}
-              className="text-lg font-semibold text-gray hover:underline"
+              className="text-lg font-semibold text-grey hover:underline"
             >
               Next Project →
             </Link>

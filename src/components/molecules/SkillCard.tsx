@@ -1,4 +1,5 @@
 import React from 'react';
+import { Text } from '../atoms/Text';
 
 interface SkillListItemProps {
   title: string;
@@ -7,9 +8,9 @@ interface SkillListItemProps {
 
 export const SkillListItem: React.FC<SkillListItemProps> = ({ title, skills }) => {
   return (
-    <div className="border border-gray">
-      <h4 className="border-b border-gray p-2">{title}</h4>
-      <p className="p-2">{skills}</p>
+    <div className="border border-grey">
+      <h4 className="border-b border-grey p-2">{title}</h4>
+      <Text className="p-2">{skills}</Text>
     </div>
   );
 };

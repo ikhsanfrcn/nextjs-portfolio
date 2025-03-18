@@ -9,7 +9,7 @@ type ProjectCard = {
   buttons?: { title: string; onClick: () => void; className?: string }[];
 };
 
-export const SmallProjectCard: React.FC<ProjectCard> = ({
+export const OfficeProjectCard: React.FC<ProjectCard> = ({
   caption,
   title,
   description,

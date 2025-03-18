@@ -23,7 +23,7 @@ export const HeroImage: React.FC = () => {
         />
         <Icon
           Component={LuSquareDashedKanban}
-          className="absolute right-0 bottom-5 text-gray text-6xl md:text-8xl"
+          className="absolute right-0 bottom-5 text-grey text-6xl md:text-8xl"
         />
       </div>
       <div className="flex items-center gap-3 border border-white p-2">

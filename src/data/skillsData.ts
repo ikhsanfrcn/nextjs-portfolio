@@ -10,11 +10,11 @@ export const skillsData: SkillItem[] = [
   },
   {
     title: 'Databases',
-    skills: 'PostgreSQL MySQL MongoDB',
+    skills: 'PostgreSQL MySQL',
   },
   {
     title: 'Other',
-    skills: 'HTML CSS React TailwindCSS',
+    skills: 'HTML CSS TailwindCSS REST Node.js',
   },
   {
     title: 'Tools',
@@ -22,6 +22,6 @@ export const skillsData: SkillItem[] = [
   },
   {
     title: 'Frameworks',
-    skills: 'Vue Next Express',
+    skills: 'React Next Express',
   },
 ];
