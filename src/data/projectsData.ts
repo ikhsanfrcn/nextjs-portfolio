@@ -16,6 +16,33 @@ export type ProjectCardProps = {
 
 export const ProjectsData: ProjectCardProps[] = [
   {
+    slug: "event-mgmt-platform-concerthubs",
+    title: "Event Management Platform (ConcertHubs) | Discover, Manage & Promote Events with Ease",
+    caption: "React Tailwind CSS Next.js Node.js Express.js PostgreSQL Prisma",
+    description: "A mini project from Purwadhika Bootcamp to comprehensive event management platform enabling organizers to create, manage, and promote events while allowing attendees to browse, register, and review events with a seamless user experience.",
+    situation: "The challenge was to build a robust MVP that simplifies event creation and ticketing for organizers, while providing a smooth browsing and registration experience for attendees.",
+    task: "We were responsible for building a fully responsive web app including authentication, event discovery, ticketing system, review system, referral reward logic, and dashboards with data visualization.",
+    action: "Utilized React and Next.js for the frontend, Tailwind CSS for styling, and Node.js with PostgreSQL for backend APIs. Integrated search with debounce, filtering, secure role-based pages, and custom logic for referrals and point expiration.",
+    result: "The MVP successfully allowed organizers to promote and monetize their events, while users benefited from a fast, intuitive interface and referral-based rewards, enhancing engagement and retention.",
+    technologies: ["React", "Tailwind CSS", "Next.js", "Node.js", "Express.js", "PostgreSQL", "Xendit"],
+    visuals: [
+      "/concerthubs.webp",
+      "/concerthubs2.webp",
+      "/concerthubs3.webp",
+      "/concerthubs4.webp",
+      "/concerthubs5.webp"
+    ],
+    links: [
+      { "preview": "https://concerthubs.vercel.app" },
+      { "github": "https://github.com/ikhsanfrcn/concerthub" }
+    ],
+    buttons: [
+      { title: "Live <~>", onClick: () => { window.open("https://concerthubs.vercel.app", "_blank"); }, className: "border-primary hover:bg-[#C778DD]" },
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[0].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
+    ]
+  },
+  
+  {
     slug: "centercode",
     title: "CenterCode | Expert in Web & Mobile App Development, UI/UX Design",
     caption: "HTML Tailwind CSS React Next.js TypeScript",
@@ -35,7 +62,7 @@ export const ProjectsData: ProjectCardProps[] = [
     ],
     buttons: [
       { title: "Live <~>", onClick: () => { window.open("https://centercode.vercel.app", "_blank"); }, className: "border-primary hover:bg-[#C778DD]" },
-      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[0].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[1].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
     ]
   },  
   {
@@ -56,27 +83,27 @@ export const ProjectsData: ProjectCardProps[] = [
     
     buttons: [
       { title: "Live <~>", onClick: () => { window.open("https://nextjs-loremipsum.vercel.app", "_blank"); }, className: "border-primary hover:bg-[#C778DD]" },
-      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[1].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
-    ],
-  },
-  {
-    slug: 'web-portfolio',
-    title: 'Web Portfolio',
-    caption: 'HTML Tailwind CSS React Next.js Typescript',
-    description: 'A personal web portfolio designed to showcase my skills, projects, and professional experience.',
-    situation: 'The project was aimed at creating an online portfolio to display my web development work and highlight my expertise.',
-    task: 'My responsibility was to design and develop a visually appealing and user-friendly portfolio that effectively communicated my work.',
-    action: 'I built the portfolio using HTML, CSS, and JavaScript for the frontend, and added interactive elements with React to enhance user experience.',
-    result: 'The portfolio has served as a powerful tool in attracting potential clients and employers, helping me secure multiple freelance opportunities.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
-    visuals: ['/portfolio.webp'],
-    links: [
-      { github: "https://github.com/ikhsanfrcn/nextjs-portfolio" }
-    ],
-    buttons: [
       { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[2].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
     ],
   },
+  // {
+  //   slug: 'web-portfolio',
+  //   title: 'Web Portfolio',
+  //   caption: 'HTML Tailwind CSS React Next.js Typescript',
+  //   description: 'A personal web portfolio designed to showcase my skills, projects, and professional experience.',
+  //   situation: 'The project was aimed at creating an online portfolio to display my web development work and highlight my expertise.',
+  //   task: 'My responsibility was to design and develop a visually appealing and user-friendly portfolio that effectively communicated my work.',
+  //   action: 'I built the portfolio using HTML, CSS, and JavaScript for the frontend, and added interactive elements with React to enhance user experience.',
+  //   result: 'The portfolio has served as a powerful tool in attracting potential clients and employers, helping me secure multiple freelance opportunities.',
+  //   technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+  //   visuals: ['/portfolio.webp'],
+  //   links: [
+  //     { github: "https://github.com/ikhsanfrcn/nextjs-portfolio" }
+  //   ],
+  //   buttons: [
+  //     { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[3].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
+  //   ],
+  // },
   {
     slug: 'fivem-game-server',
     title: 'FiveM Custom Game Server',
