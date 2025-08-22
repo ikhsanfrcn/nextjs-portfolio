@@ -16,6 +16,30 @@ export type ProjectCardProps = {
 
 export const ProjectsData: ProjectCardProps[] = [
   {
+    slug: "jobsdoors",
+    title: "JobsDoors | Empowering Careers, Connecting Ambitions",
+    caption: "HTML TailwindCSS React Next.js Express.js TypeScript PostgreSQL PrismaORM",
+    description: "A fullstack Job Board App connecting job seekers and companies, featuring job discovery, application tracking, company management, subscription services, and skill assessments.",
+    situation: "The goal was to build a Job Board App that connects job seekers with companies, offering features like job discovery, applications, and subscription-based premium services.",
+    task: "Our team was responsible for fullstack development, including authentication, job and company management, application tracking, subscription system, and skill assessments.",
+    action: "We used Next.js, TypeScript, and TailwindCSS for a responsive UI, while Express.js, Prisma, and PostgreSQL powered the backend with secure APIs, role-based access, and clean code practices.",
+    result: "The project delivered a fully functional Job Board App with multi-role support, modern UI/UX, and scalable backend solutions, receiving positive evaluations for feature completeness and clean implementation.",
+    technologies: ["HTML", "Tailwind CSS", "React", "Next.js", "Express.js", "PostgreSQL", "Prisma ORM"],
+    visuals: [
+      "/jd1.png",
+      "/jd2.png",
+      "/jd3.png",
+    ],
+    links: [
+      { "preview": "https://jobsdoors.vercel.app" },
+      { "github": "https://github.com/ikhsanfrcn/job-board-app" }
+    ],
+    buttons: [
+      { title: "Live <~>", onClick: () => { window.open("https://jobsdoors.vercel.app", "_blank"); }, className: "border-primary hover:bg-[#C778DD]" },
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[0].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
+    ]
+  },
+  {
     slug: "centercode",
     title: "CenterCode | Expert in Web & Mobile App Development, UI/UX Design",
     caption: "HTML Tailwind CSS React Next.js TypeScript",
@@ -35,7 +59,7 @@ export const ProjectsData: ProjectCardProps[] = [
     ],
     buttons: [
       { title: "Live <~>", onClick: () => { window.open("https://centercode.vercel.app", "_blank"); }, className: "border-primary hover:bg-[#C778DD]" },
-      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[0].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
+      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[1].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
     ]
   },  
   {
@@ -56,27 +80,27 @@ export const ProjectsData: ProjectCardProps[] = [
     
     buttons: [
       { title: "Live <~>", onClick: () => { window.open("https://nextjs-loremipsum.vercel.app", "_blank"); }, className: "border-primary hover:bg-[#C778DD]" },
-      { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[1].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
-    ],
-  },
-  {
-    slug: 'web-portfolio',
-    title: 'Web Portfolio',
-    caption: 'HTML Tailwind CSS React Next.js Typescript',
-    description: 'A personal web portfolio designed to showcase my skills, projects, and professional experience.',
-    situation: 'The project was aimed at creating an online portfolio to display my web development work and highlight my expertise.',
-    task: 'My responsibility was to design and develop a visually appealing and user-friendly portfolio that effectively communicated my work.',
-    action: 'I built the portfolio using HTML, CSS, and JavaScript for the frontend, and added interactive elements with React to enhance user experience.',
-    result: 'The portfolio has served as a powerful tool in attracting potential clients and employers, helping me secure multiple freelance opportunities.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
-    visuals: ['/portfolio.webp'],
-    links: [
-      { github: "https://github.com/ikhsanfrcn/nextjs-portfolio" }
-    ],
-    buttons: [
       { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[2].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
     ],
   },
+  // {
+  //   slug: 'web-portfolio',
+  //   title: 'Web Portfolio',
+  //   caption: 'HTML Tailwind CSS React Next.js Typescript',
+  //   description: 'A personal web portfolio designed to showcase my skills, projects, and professional experience.',
+  //   situation: 'The project was aimed at creating an online portfolio to display my web development work and highlight my expertise.',
+  //   task: 'My responsibility was to design and develop a visually appealing and user-friendly portfolio that effectively communicated my work.',
+  //   action: 'I built the portfolio using HTML, CSS, and JavaScript for the frontend, and added interactive elements with React to enhance user experience.',
+  //   result: 'The portfolio has served as a powerful tool in attracting potential clients and employers, helping me secure multiple freelance opportunities.',
+  //   technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+  //   visuals: ['/portfolio.webp'],
+  //   links: [
+  //     { github: "https://github.com/ikhsanfrcn/nextjs-portfolio" }
+  //   ],
+  //   buttons: [
+  //     { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[2].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
+  //   ],
+  // },
   {
     slug: 'fivem-game-server',
     title: 'FiveM Custom Game Server',
