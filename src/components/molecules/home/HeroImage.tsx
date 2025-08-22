@@ -30,7 +30,7 @@ export const HeroImage: React.FC = () => {
         <div className="w-5 h-5 bg-primary"></div>
         <div>
           <Text>Currently working on</Text>
-          <span className="text-white"> Company Profile</span>
+          <span className="text-white"> Final Project Purwadhika</span>
         </div>
       </div>
     </div>
