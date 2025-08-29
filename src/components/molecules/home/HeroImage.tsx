@@ -29,8 +29,8 @@ export const HeroImage: React.FC = () => {
       <div className="flex items-center gap-3 border border-white p-2">
         <div className="w-5 h-5 bg-primary"></div>
         <div>
-          <Text>Currently working on</Text>
-          <span className="text-white"> Final Project Purwadhika</span>
+          <Text>Currently working as</Text>
+          <span className="text-white"> a freelancer</span>
         </div>
       </div>
     </div>
