@@ -109,6 +109,24 @@ export const ProjectsData: ProjectCardProps[] = [
       { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[3].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
     ],
   },
+  // {
+  //   slug: 'web-portfolio',
+  //   title: 'Web Portfolio',
+  //   caption: 'HTML Tailwind CSS React Next.js Typescript',
+  //   description: 'A personal web portfolio designed to showcase my skills, projects, and professional experience.',
+  //   situation: 'The project was aimed at creating an online portfolio to display my web development work and highlight my expertise.',
+  //   task: 'My responsibility was to design and develop a visually appealing and user-friendly portfolio that effectively communicated my work.',
+  //   action: 'I built the portfolio using HTML, CSS, and JavaScript for the frontend, and added interactive elements with React to enhance user experience.',
+  //   result: 'The portfolio has served as a powerful tool in attracting potential clients and employers, helping me secure multiple freelance opportunities.',
+  //   technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+  //   visuals: ['/portfolio.webp'],
+  //   links: [
+  //     { github: "https://github.com/ikhsanfrcn/nextjs-portfolio" }
+  //   ],
+  //   buttons: [
+  //     { title: "More >=", onClick: () => { window.location.href = `/projects/${ProjectsData[2].slug}`; }, className: "border-grey text-grey hover:bg-[#ABB2BF]" }
+  //   ],
+  // },
   {
     slug: 'fivem-game-server',
     title: 'FiveM Custom Game Server',
