@@ -41,7 +41,7 @@ export const ProjectsData: ProjectCardProps[] = [
   },
   {
     slug: "event-mgmt-platform-concerthubs",
-    title: "Event Management Platform (ConcertHubs) | Discover, Manage & Promote Events with Ease",
+    title: "Event Management Platform (ConcertHubs)",
     caption: "React Tailwind CSS Next.js Node.js Express.js PostgreSQL Prisma",
     description: "A mini project from Purwadhika Bootcamp to comprehensive event management platform enabling organizers to create, manage, and promote events while allowing attendees to browse, register, and review events with a seamless user experience.",
     situation: "The challenge was to build a robust MVP that simplifies event creation and ticketing for organizers, while providing a smooth browsing and registration experience for attendees.",

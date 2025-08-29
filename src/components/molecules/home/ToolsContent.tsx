@@ -10,7 +10,11 @@ export default function ToolsContent() {
           <Marquee pauseOnHover={true}>
             <ToolsItem
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-              desc="Node js"
+              desc="Node JS"
+            />
+            <ToolsItem
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+              desc="Express JS"
             />
             <ToolsItem
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
@@ -26,7 +30,7 @@ export default function ToolsContent() {
             />
             <ToolsItem
               src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/nextjs-icon.svg"
-              desc="Next js"
+              desc="Next JS"
             />
             <ToolsItem
               src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/tailwindcss-icon.svg"
@@ -39,6 +43,10 @@ export default function ToolsContent() {
             <ToolsItem
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"
               desc="PostgreSQL"
+            />
+            <ToolsItem
+              src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/prisma.svg"
+              desc="Prisma ORM"
             />
             <ToolsItem
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"

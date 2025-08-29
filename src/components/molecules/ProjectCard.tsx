@@ -30,14 +30,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         className="md:h-[150px] lg:h-[250px] w-full object-cover border-b border-grey"
       />
       <div className="p-2 border-b border-grey">
-        <Text className="md:line-clamp-2 line-clamp-3 hover:line-clamp-none">{caption}</Text>
+        <Text className="md:line-clamp-2 line-clamp-3">{caption}</Text>
       </div>
       <div className="grid gap-3 p-4">
         <div className="h-10">
-        <h3 className="text-xl line-clamp-1 hover:line-clamp-none bg-background">{title}</h3>
+        <h3 className="text-xl line-clamp-1 bg-background">{title}</h3>
         </div>
         <div className="h-20 z-10">
-          <Text className="text-sm line-clamp-3 hover:line-clamp-none bg-background">
+          <Text className="text-sm line-clamp-3 bg-background">
             {description}
           </Text>
         </div>

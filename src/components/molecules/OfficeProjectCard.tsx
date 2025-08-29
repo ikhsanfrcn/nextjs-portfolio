@@ -19,12 +19,12 @@ export const OfficeProjectCard: React.FC<ProjectCard> = ({
   return (
     <div className={`border border-gray${className}`}>
       <div className="border-b p-2">
-        <Text className="line-clamp-1 hover:line-clamp-none">{caption}</Text>
+        <Text className="line-clamp-1">{caption}</Text>
       </div>
       <div className="grid gap-3 p-4">
-        <h3 className="text-xl line-clamp-1 hover:line-clamp-none">{title}</h3>
+        <h3 className="text-xl line-clamp-1">{title}</h3>
         <div className="h-20">
-          <Text className="text-sm line-clamp-4 hover:line-clamp-none">
+          <Text className="text-sm line-clamp-4">
             {description}
           </Text>
         </div>

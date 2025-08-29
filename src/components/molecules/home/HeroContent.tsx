@@ -8,8 +8,8 @@ export const HeroContent: React.FC = () => {
   return (
     <div className='md:w-[50%]'>
       <Title className="text-3xl font-bold">
-        Ikhsan is a <span className="text-primary">web designer</span> and <br />
-        <span className="text-primary">Software developer</span>
+        Ikhsan is a <span className="text-primary">Software Developer</span> with a focus on<br />
+        <span className="text-primary">Web Development</span>
       </Title>
       <Motion direction="left">
         <div className="flex items-center gap-2">
