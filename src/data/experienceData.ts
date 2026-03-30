@@ -40,5 +40,5 @@ export const experienceData = [
     companyName: "CV Global Media Solusindo",
     description:
       "Provided on-site IT support, including installation and configuration of Windows OS, software, and office apps. Troubleshot hardware/software issues (PC, laptop, printer) and assisted with network setup (LAN/WiFi). Supported IT infrastructure deployment, maintenance, and managed asset inventory and documentation.",
-  },
+  }
 ];

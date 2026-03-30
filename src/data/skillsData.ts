@@ -5,23 +5,23 @@ export interface SkillItem {
 
 export const skillsData: SkillItem[] = [
   {
-    title: 'Languages',
-    skills: 'TypeScript JavaScript Lua',
+    title: 'Frontend',
+    skills: 'React.js, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS',
   },
   {
-    title: 'Databases',
-    skills: 'PostgreSQL MySQL',
+    title: 'Backend',
+    skills: 'Node.js, Express.js, PostgreSQL, MySQL/MariaDB, Prisma ORM, RESTful API',
   },
   {
-    title: 'Other',
-    skills: 'HTML CSS TailwindCSS REST Node.js',
+    title: 'System & Cloud',
+    skills: 'Linux Server, VPS Management, Nginx, SSH Deployment',
   },
   {
-    title: 'Tools',
-    skills: 'VSCode Figma Git',
+    title: 'Physical IT & Networking',
+    skills: 'LAN/WLAN Configuration, VoIP, Hardware Troubleshooting & Repair, On-site Technical Support',
   },
   {
-    title: 'Frameworks',
-    skills: 'React Next Express',
+    title: 'Tools & Workflow',
+    skills: 'Git, GitHub, Jira, Agile/Scrum, Axios, REST API Integration',
   },
 ];
