@@ -30,7 +30,7 @@ export const HeroImage: React.FC = () => {
         <div className="w-5 h-5 bg-primary"></div>
         <div>
           <Text>Open to work</Text>
-          <span className="text-white"> Web Developer | Software Developer</span>
+          <span className="text-white"> IT Specialist | Full-Stack Developer</span>
         </div>
       </div>
     </div>

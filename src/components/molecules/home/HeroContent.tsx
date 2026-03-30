@@ -7,15 +7,19 @@ import TypeAnimations from "../../atoms/Type";
 export const HeroContent: React.FC = () => {
   return (
     <div className='md:w-[50%]'>
-      <Title className="text-3xl font-bold">
-        Ikhsan is a <span className="text-primary">Software Developer</span> with a focus on<br />
-        <span className="text-primary">Web Development</span>
+      <Title className="text-xl font-bold">
+        Ikhsan is a <span className="text-primary">versatile IT Professional</span> with a focus on<br />
+        <span className="text-primary">Software Development and Infrastructure</span>
       </Title>
       <Motion direction="left">
         <div className="flex items-center gap-2">
           <span className="mt-5 h-16 md:h-5 relative text-lg text-grey">
             <TypeAnimations
-              sequence={["He crafts responsive websites", "where technologies meet creativity"]}
+              sequence={[
+                "Builds robust web applications",
+                "Maintains network & server infrastructure",
+                "Where hardware meets software solutions"
+              ]}
               delay={3000}
             />
           </span>

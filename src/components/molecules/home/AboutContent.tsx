@@ -14,24 +14,24 @@ export const AboutContent: React.FC<AboutContentProps> = ({
       <div className="flex flex-col gap-5 pt-10">
         <Text>Hi, I’m Ikhsan!</Text>
         <Text>
-          As a Software Developer, my focus is on creating scalable,
-          user-friendly applications. I am passionate about building efficient,
-          high-performance solutions and continually learning to improve my
-          expertise.
+          As a versatile IT Professional, I bridge the gap between robust software
+          development and reliable IT infrastructure. I am passionate about building
+          efficient, high-performance applications while ensuring the underlying
+          systems—from Linux servers to network configurations—are optimized and secure.
         </Text>
         <Text>
-          I specialize in front-end technologies like React.js and Next.js,
-          paired with CSS frameworks such as Tailwind CSS to build responsive
-          and visually appealing interfaces. On the back end, I work with
-          Node.js, Express.js, and databases like PostgreSQL and MongoDB to
-          develop secure and efficient APIs.
+          I specialize in Full-stack Web Development using React.js, Next.js, and
+          Node.js, combined with a strong foundation in System Administration and
+          Networking. Whether it's crafting responsive user interfaces or
+          troubleshooting complex hardware and LAN/WLAN issues, I thrive on
+          solving technical challenges from the ground up.
         </Text>
         <Text>
-          As both a developer and game server administrator, my problem-solving
-          and technical abilities have been sharpened. I am committed to writing
-          clean, maintainable code and delivering high-quality applications. I
-          prioritize staying up-to-date with the latest technologies to
-          continually grow as a developer.
+          With experience as both a developer and game server administrator, I bring
+          a unique perspective to problem-solving. I am committed to delivering
+          clean, maintainable code and building stable IT environments, always
+          staying up-to-date with the latest technologies to provide end-to-end
+          digital solutions.
         </Text>
       </div>
       {showButton && (

@@ -7,12 +7,10 @@ export const SkillSection: React.FC = () => {
       <h2 className="text-2xl text-primary">
         #<span className="text-white">skills</span>
       </h2>
-      <div className="grid md:flex justify-between gap-5 mt-10">
-          <SkillListItem title={skillsData[0].title} skills={skillsData[0].skills} />
-          <SkillListItem title={skillsData[1].title} skills={skillsData[1].skills} />
-          <SkillListItem title={skillsData[2].title} skills={skillsData[2].skills} />
-          <SkillListItem title={skillsData[3].title} skills={skillsData[3].skills} />
-          <SkillListItem title={skillsData[4].title} skills={skillsData[4].skills} />
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 mt-10">
+        {skillsData.map((item) => (
+          <SkillListItem key={item.title} title={item.title} skills={item.skills} />
+        ))}
       </div>
     </section>
   );

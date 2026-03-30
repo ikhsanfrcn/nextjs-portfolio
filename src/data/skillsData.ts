@@ -14,10 +14,10 @@ export const skillsData: SkillItem[] = [
   },
   {
     title: 'System & Cloud',
-    skills: 'Linux Server, VPS Management, Nginx, SSH Deployment',
+    skills: 'Linux Server, VPS Management, Nginx, Vercel, SSH Deployment, CI/CD',
   },
   {
-    title: 'Physical IT & Networking',
+    title: 'IT & Networking',
     skills: 'LAN/WLAN Configuration, VoIP, Hardware Troubleshooting & Repair, On-site Technical Support',
   },
   {
