@@ -18,7 +18,7 @@ export const OfficeProjectSection: React.FC = () => {
             caption={project.caption}
             title={project.title}
             description={project.description}
-            buttons={project.buttons}
+            // buttons={project.buttons}
           />
         ))}
       </div>

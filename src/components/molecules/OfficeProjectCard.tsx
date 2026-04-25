@@ -23,12 +23,12 @@ export const OfficeProjectCard: React.FC<ProjectCard> = ({
       </div>
       <div className="grid gap-3 p-4">
         <h3 className="text-xl line-clamp-1">{title}</h3>
-        <div className="h-20">
+        <div className="">
           <Text className="text-sm line-clamp-4">
             {description}
           </Text>
         </div>
-        <div className="flex gap-3">
+        {/* <div className="flex gap-3">
           {buttons.map((button, index) => (
             <Button
               key={index}
@@ -38,7 +38,7 @@ export const OfficeProjectCard: React.FC<ProjectCard> = ({
               {button.title}
             </Button>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
