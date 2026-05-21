@@ -23,7 +23,7 @@ export const ProjectsData: ProjectCardProps[] = [
     situation: "The goal was to build a Job Board App that connects job seekers with companies, offering features like job discovery, applications, and subscription-based premium services.",
     task: "Our team was responsible for fullstack development, including authentication, job and company management, application tracking, subscription system, and skill assessments.",
     action: "We used Next.js, TypeScript, and TailwindCSS for a responsive UI, while Express.js, Prisma, and PostgreSQL powered the backend with secure APIs, role-based access, and clean code practices.",
-    result: "The project delivered a fully functional Job Board App with multi-role support, modern UI/UX, and scalable backend solutions, receiving positive evaluations for feature completeness and clean implementation.",
+    result: "The project delivered a fully functional Job Board App with multi-role support, modern UI/UX, and scalable backend solutions, well-received for its feature completeness and clean implementation.",
     technologies: ["HTML", "Tailwind CSS", "React", "Next.js", "Express.js", "PostgreSQL", "Prisma ORM"],
     visuals: [
       "/jd1.png",
@@ -43,7 +43,7 @@ export const ProjectsData: ProjectCardProps[] = [
     slug: "event-mgmt-platform-concerthubs",
     title: "Event Management Platform (ConcertHubs)",
     caption: "React Tailwind CSS Next.js Node.js Express.js PostgreSQL Prisma",
-    description: "A mini project from Purwadhika Bootcamp to comprehensive event management platform enabling organizers to create, manage, and promote events while allowing attendees to browse, register, and review events with a seamless user experience.",
+    description: "A comprehensive event management platform enabling organizers to create, manage, and promote events while allowing attendees to browse, register, and review events with a seamless user experience.",
     situation: "The challenge was to build a robust MVP that simplifies event creation and ticketing for organizers, while providing a smooth browsing and registration experience for attendees.",
     task: "We were responsible for building a fully responsive web app including authentication, event discovery, ticketing system, review system, referral reward logic, and dashboards with data visualization.",
     action: "Utilized React and Next.js for the frontend, Tailwind CSS for styling, and Node.js with PostgreSQL for backend APIs. Integrated search with debounce, filtering, secure role-based pages, and custom logic for referrals and point expiration.",
